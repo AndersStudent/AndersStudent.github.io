@@ -236,11 +236,11 @@ nav a:hover {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  aspect-ratio: 4 / 3; /* Match the 400x300 placeholder image ratio */
+  aspect-ratio: 16 / 9;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; /* Black background for letterboxing */
+  background-color: #000;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -347,6 +347,11 @@ nav a:hover {
 /* Project cards have an extra project-meta row — span 5 tracks */
 .game-showcase:has(.project-meta) {
   grid-row: span 5;
+}
+
+/* Cards with a video span all columns for a larger display */
+.game-showcase:has(.carousel-video) {
+  grid-column: 1 / -1;
 }
 
 .game-showcase h2 {
