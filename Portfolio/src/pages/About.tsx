@@ -66,7 +66,7 @@ const About: React.FC = () => {
             <span className="stat-label">Medialogy &mdash; AAU</span>
           </div>
           <div className="about-stat-card">
-            <span className="stat-value">Studio</span>
+            <span className="stat-value">Game Studio</span>
             <span className="stat-label">Pennie Entertainment ApS</span>
           </div>
           <div className="about-stat-card">

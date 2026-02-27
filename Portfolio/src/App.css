@@ -227,27 +227,24 @@ nav a:hover {
 
 /* Carousel Styles */
 .carousel {
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 0 -1.25rem;
+  width: calc(100% + 2.5rem);
   text-align: center;
 }
 
 .carousel-video {
-  position: relative;
+  display: block;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
   background-color: #000;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .video-player {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
   border-radius: 8px;
 }
 
@@ -275,9 +272,7 @@ nav a:hover {
 .carousel-image {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  aspect-ratio: 4 / 3; /* Match video container ratio */
+  aspect-ratio: 4 / 3;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
