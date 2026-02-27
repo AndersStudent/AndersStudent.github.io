@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ── Design tokens ── */
+  --accent:         #1d4ed8;
+  --accent-hover:   #1e40af;
+  --accent-bg:      rgba(29, 78, 216, 0.10);
+  --accent-border:  rgba(29, 78, 216, 0.30);
+
+  --bg:             #ffffff;
+  --bg-card:        #ffffff;
+  --border:         rgba(29, 78, 216, 0.18);
+
+  --text:           #0f1e2e;
+  --text-muted:     #3d5166;
+  --text-heading:   #0a1628;
+
+  --nav-bg:         rgba(255, 255, 255, 0.94);
+  --dropdown-bg:    #ffffff;
+
+  /* ── Shadow tokens ── */
+  --shadow-xs:  0 1px 4px rgba(15, 30, 46, 0.06);
+  --shadow-sm:  0 2px 10px rgba(29, 78, 216, 0.08);
+  --shadow-md:  0 8px 28px rgba(29, 78, 216, 0.14);
+  --shadow-lg:  0 16px 48px rgba(29, 78, 216, 0.20);
+
+  /* ── Gradients ── */
+  --gradient-accent: linear-gradient(135deg, #1d4ed8 0%, #4f46e5 100%);
+  --gradient-hero:   radial-gradient(ellipse 80% 60% at 50% -10%, rgba(29,78,216,0.12) 0%, transparent 70%);
+
+  /* ── Radius ── */
+  --radius-card: 14px;
+  --radius-btn:  8px;
+
+  color-scheme: light;
+  color: var(--text);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes profilePulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(29,78,216,0.18), var(--shadow-md); }
+  50%       { box-shadow: 0 0 0 8px rgba(29,78,216,0.10), var(--shadow-lg); }
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+button {
+  border-radius: var(--radius-btn);
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--gradient-accent);
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.18s, box-shadow 0.2s;
+}
+button:hover {
+  opacity: 0.88;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.35);
+}
+button:active {
+  transform: translateY(0) scale(1);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
