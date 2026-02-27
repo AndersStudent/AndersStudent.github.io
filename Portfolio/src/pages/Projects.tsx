@@ -110,25 +110,53 @@ interface ProjectCarouselProps {
   game: Project;
 }
 
+const getYouTubeVideoId = (url: string): string | null => {
+  const patterns = [
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^&\n?#]+)/,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/embed\/([^&\n?#]+)/,
+    /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^&\n?#]+)/
+  ];
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match && match[1]) return match[1];
+  }
+  return null;
+};
+
 export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ game }) => {
   // If there's a video, show video player
   if (game.video) {
+    const youtubeId = getYouTubeVideoId(game.video);
+    if (youtubeId) {
+      const embedUrl = `https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1`;
       return (
         <div className="carousel">
           <div className="carousel-video">
-            <video
-              controls
-              poster={game.images?.[0]} // Use first image as poster if available
+            <iframe
+              src={embedUrl}
+              title={`${game.title} video`}
               className="video-player"
-            >
-              <source src={game.video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
           <div className="indicators" />
         </div>
       );
     }
+    return (
+      <div className="carousel">
+        <div className="carousel-video">
+          <video controls poster={game.images?.[0]} className="video-player">
+            <source src={game.video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className="indicators" />
+      </div>
+    );
+  }
 
   // Otherwise, show image carousel. If there are no images either, render a
   // placeholder box to keep card heights consistent.
