@@ -220,9 +220,9 @@ export const projectsData: Project[] = [
     title: 'Not-2B Diner Dash',
     description: '<ul><li><strong>Steampunk-inspired action restaurant simulator</strong> where players serve customers and manage a chaotic diner in a cozy-themed. </li><li><strong>Lead Programmer, The Game Integrator, Co-Director & Level Designer</strong> (Team of 5) </li> <li><strong>Unity (C#) | Create Jam 2022 Fall (45h) </strong></li></ul>',
     images: [
-      'GameJams/Pictures/Not-2B Diner Dash/not-2b-diner-dash-3.png',
-      'GameJams/Pictures/Not-2B Diner Dash/not-2b-diner-dash-2.png',
-      'GameJams/Pictures/Not-2B Diner Dash/not-2b-diner-dash-1.png',
+      'GameJams/Pictures/not-2B Diner Dash/not-2b-diner-dash-3.png',
+      'GameJams/Pictures/not-2B Diner Dash/not-2b-diner-dash-2.png',
+      'GameJams/Pictures/not-2B Diner Dash/not-2b-diner-dash-1.png',
     ],
     link: 'https://mishimads.itch.io/3b-diner-dash',
     buttonText: 'Itch.io Page',
