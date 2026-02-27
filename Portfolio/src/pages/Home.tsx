@@ -20,9 +20,9 @@ const Home: React.FC = () => {
         <div className="hero-text">
           
         <h1>Anders Lucassen Lund</h1>
-        <p> I am a <strong>Master&#39;s student in Medialogy</strong> and a passionate <strong>developer</strong> based in Aalborg, Denmark, creating both <strong>games</strong> and other <strong>interactive applications</strong>. I have been creating games since 2016, with a strong focus on <strong>programming, procedural generation,</strong> and <strong>AI-driven applications. </strong> </p>
+        <p> I am a <strong>25-year-old Master&#39;s student in Medialogy</strong> and a passionate <strong>developer</strong> based in Aalborg, Denmark, creating both <strong>games</strong> and other <strong>interactive applications</strong>. I have been creating games since 2016, with a strong focus on <strong>programming, procedural generation,</strong> and <strong>AI-driven applications. </strong> </p>
 
-        <p> I founded and ran my own sole-developer game studio, <strong>Pennie Entertainment ApS</strong>. I have worked as a <strong>lead programmer</strong> and <strong>systems integrator</strong>. I have experience with both <strong>solo</strong> and <strong>team-based projects</strong>. Alongside Game and Application development, I enjoy <strong>storytelling</strong> and <strong>teaching</strong>. </p>
+        <p> I founded and ran my own <strong>sole-developer</strong> game studio, <strong>Pennie Entertainment ApS</strong> from 2020 to 2025. I have mostly worked as a <strong>lead programmer</strong> and <strong>systems integrator</strong>, and have experience with both <strong>solo</strong> and <strong>team-based projects</strong>. Alongside Game and Application development, I also enjoy <strong>storytelling</strong> and <strong>helping others learn</strong>. </p>
 
         <p> My long-term goal is to inspire others through education in <strong>game design and development</strong> while continuing to grow as a developer across multiple technical fields. </p>
           </div>
@@ -39,6 +39,7 @@ const Home: React.FC = () => {
               <div className="game-description">
                 <div dangerouslySetInnerHTML={{ __html: game.description }} />
               </div>
+              <div className="project-my-role" dangerouslySetInnerHTML={{ __html: game.myRole ?? '' }} />
               {game.link && (
                 <div className="game-button">
                   <LinkButton

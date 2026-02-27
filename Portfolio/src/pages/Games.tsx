@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getProjectsByType, Project } from '../data/projectData';
 import LinkButton from '../components/LinkButton';
+import { ProjectCarousel } from './Projects';
 
 // Helper function to check if URL is a YouTube video and extract video ID
 const getYouTubeVideoId = (url: string): string | null => {
@@ -22,7 +23,8 @@ const getYouTubeVideoId = (url: string): string | null => {
 
 const Games: React.FC = () => {
   const PublishedGames = getProjectsByType('Solo Development');
-  const GameJamGames = getProjectsByType('Game Jam');
+    const GameJamGames = getProjectsByType('Game Jam');
+  const GameInDevelopmentGames = getProjectsByType('GameInDevelopment');
   const location = useLocation();
 
   useEffect(() => {
@@ -47,6 +49,7 @@ const Games: React.FC = () => {
               <div className="game-description">
                 <div dangerouslySetInnerHTML={{ __html: game.description }} />
               </div>
+              <div className="project-my-role" dangerouslySetInnerHTML={{ __html: game.myRole ?? '' }} />
               {game.link && (
                 <div className="game-button">
                   <LinkButton
@@ -66,7 +69,30 @@ const Games: React.FC = () => {
 
       <section id="in-development">
         <h1>In Development</h1>
-        {/* Add current games here */}
+        <div className="games-grid">
+          {GameInDevelopmentGames.map((game, gameIndex) => (
+            <div key={gameIndex} className="game-showcase">
+              <h2>{game.title}</h2>
+              <ProjectCarousel game={game} />
+              <div className="game-description">
+                <div dangerouslySetInnerHTML={{ __html: game.description }} />
+              </div>
+              <div className="project-my-role" dangerouslySetInnerHTML={{ __html: game.myRole ?? '' }} />
+              {game.link && (
+                <div className="game-button">
+                  <LinkButton
+                    href={game.link}
+                    download={
+                      game.download || game.link.toLowerCase().endsWith('.pdf')
+                    }
+                  >
+                    {game.buttonText || 'View Project'}
+                  </LinkButton>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </section>
 
       <section id="game-jams">
@@ -79,6 +105,7 @@ const Games: React.FC = () => {
               <div className="game-description">
                 <div dangerouslySetInnerHTML={{ __html: game.description }} />
               </div>
+              <div className="project-my-role" dangerouslySetInnerHTML={{ __html: game.myRole ?? '' }} />
               {game.link && (
                 <div className="game-button">
                   <LinkButton

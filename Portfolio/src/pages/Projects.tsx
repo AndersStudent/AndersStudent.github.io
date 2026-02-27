@@ -5,6 +5,7 @@ import { useLocation } from 'react-router';
 
 const Projects: React.FC = () => {
   const projects = getProjectsByType('Semester Project');
+    const projectsInDevelopment = getProjectsByType('ProjectInDevelopment');
   const location = useLocation();
 
   useEffect(() => {
@@ -44,6 +45,7 @@ const Projects: React.FC = () => {
               <div className="game-description">
                 <div dangerouslySetInnerHTML={{ __html: game.description }} />
               </div>
+              <div className="project-my-role" dangerouslySetInnerHTML={{ __html: game.myRole ?? '' }} />
               {game.link && (
                 <div className="game-button">
                   <LinkButton
@@ -64,7 +66,7 @@ const Projects: React.FC = () => {
       <section id="In-Development">
         <h1>In Development</h1>
         <div className="games-grid">
-          {projects.map((game, gameIndex) => (
+          {projectsInDevelopment.map((game, gameIndex) => (
             <div key={gameIndex} className="game-showcase">
               <h2>{game.title}</h2>
               <ProjectCarousel game={game} />
@@ -86,6 +88,7 @@ const Projects: React.FC = () => {
               <div className="game-description">
                 <div dangerouslySetInnerHTML={{ __html: game.description }} />
               </div>
+              <div className="project-my-role" dangerouslySetInnerHTML={{ __html: game.myRole ?? '' }} />
               {game.link && (
                 <div className="game-button">
                   <LinkButton
@@ -225,7 +228,7 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ game }) => {
         {game.images!.map((_, index) => (
           <button
             key={index}
-            className={index === displayedIndex ? 'active' : ''}
+            className={index === (incomingIndex !== null ? incomingIndex : displayedIndex) ? 'active' : ''}
             onClick={() => goToImage(index)}
             aria-label={`Go to image ${index + 1}`}
           />

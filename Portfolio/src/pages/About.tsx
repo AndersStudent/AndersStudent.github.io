@@ -48,7 +48,9 @@ const About: React.FC = () => {
         <p>
           I specialize in{' '}
           <strong>game development, game design, programming, procedural generation, interactive systems</strong>,
-          and <strong>AI-driven applications</strong>.
+          and <strong>AI-driven applications</strong>, with academic and personal work spanning fields
+          from <strong>VR</strong> and <strong>Computer vision</strong> to{' '}
+          <strong>Bots</strong> and <strong>Finance</strong>.
         </p>
         <p>
           My typical roles include <strong>Lead Programmer</strong>,{' '}
@@ -95,6 +97,13 @@ const About: React.FC = () => {
             <strong>GameMaker</strong>. I am largely self-taught in <strong>Programming</strong> and{' '}
             <strong>Game Development</strong>.
           </p>
+          <p>
+          Beyond games, my work spans a broad range of technical domains, from{' '}
+          <strong>AI-driven tutoring systems</strong> and <strong>VR cultural experiences </strong>
+          to <strong>computer vision</strong>, <strong>audio signal processing</strong>, and
+          personal projects like a <strong>stock trading bot</strong> and{' '}
+          <strong>drone engineering</strong>.
+        </p>
           <p>
             I have also worked as a childcare assistant in a daycare and kindergarten for over half a
             year. This experience strengthened my communication, patience, and teaching skills,
@@ -167,7 +176,7 @@ const About: React.FC = () => {
             an <strong>automated stock trading bot</strong>.
           </p>
           <p>
-            I also enjoy <strong>writing, storytelling, teaching</strong>, and{' '}
+            I also enjoy <strong>writing, storytelling, helping others learn</strong>, and{' '}
             <strong>creating custom food recipes</strong>.
           </p>
         </div>
