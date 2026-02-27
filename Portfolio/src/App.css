@@ -16,7 +16,7 @@
 .hero {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2.4rem;
   text-align: left;
   margin-bottom: 2rem;
   background: var(--gradient-hero);
