@@ -17,7 +17,7 @@ This is my personal portfolio website built with Vite and React.
 
 ## Build
 
-To build for production: `npm un build`
+To build for production: `npm run build`
 
 ## Technologies Used
 
