@@ -34,6 +34,14 @@ jobs:
         run: npm run build
         working-directory: Portfolio
 
+      - name: Copy media assets to dist
+        run: |
+          for dir in GameJams ProfilBilleder SemesterProjects SoloDevGames; do
+            if [ -d "Portfolio/$dir" ]; then
+              cp -r "Portfolio/$dir" "Portfolio/dist/$dir"
+            fi
+          done
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
