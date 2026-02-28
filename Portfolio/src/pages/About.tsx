@@ -30,7 +30,7 @@ const About: React.FC = () => {
   const additionalLangs = ['C++', 'C#', 'Java', 'R', 'PHP', 'SQL', 'HTML & CSS'];
   const visualTools = ['Blender', 'Photoshop', 'Krita', 'Figma', 'Aseprite', 'MagicaVoxel'];
   const devTools = ['Unity', 'VR Development', 'AR Development', 'Visual Studio', 'Visual Studio Code'];
-  const specializations = ['Game Design & Development', 'Interactive Systems', 'Procedural Generation', 'AI-driven Systems', 'Problem-Solving', ];
+  const specializations = ['Game Design & Development', 'Interactive Systems', 'Procedural Generation', 'AI-driven Systems', 'Multimedia Design', 'Digital Prototyping'];
   const softSkills = ['Works well under pressure', 'Team & solo environments', 'Communication & teaching', 'Debugging & problem-solving'];
 
   return (
