@@ -31,7 +31,7 @@ const About: React.FC = () => {
   const visualTools = ['Blender', 'Photoshop', 'Krita', 'Figma', 'Aseprite', 'MagicaVoxel'];
   const devTools = ['Unity', 'VR Development', 'AR Development', 'Visual Studio', 'Visual Studio Code'];
   const specializations = ['Game Design & Development', 'Interactive Systems', 'Procedural Generation', 'AI-driven Systems', 'Multimedia Design', 'Digital Prototyping'];
-  const softSkills = ['Works well under pressure', 'Team & solo environments', 'Communication & teaching', 'Debugging & problem-solving'];
+  const softSkills = ['Works well under pressure', 'Team & Solo Environments', 'Communication & Teaching', 'Debugging & Problem-solving'];
 
   return (
     <div className="about-page">
