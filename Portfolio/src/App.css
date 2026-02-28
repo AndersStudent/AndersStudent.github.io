@@ -102,12 +102,11 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* scroll-behavior is handled in JS (ScrollToTop) to allow instant vs smooth per context */
 
-section {
-  scroll-margin-top: 65px;
+section,
+[id] {
+  scroll-margin-top: 90px;
 }
 
 .App {
