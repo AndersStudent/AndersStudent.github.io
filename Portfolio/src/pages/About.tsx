@@ -28,9 +28,9 @@ const About: React.FC = () => {
 
   const primaryLangs = ['Unity (C#)', 'Python', 'MATLAB', 'JavaScript'];
   const additionalLangs = ['C++', 'C#', 'Java', 'R', 'PHP', 'SQL', 'HTML & CSS'];
-  const visualTools = ['Blender', 'Aseprite', 'MagicaVoxel', 'Photoshop'];
-  const devTools = ['Unity', 'Git', 'VR Development', 'Visual Studio', 'Visual Studio Code'];
-  const specializations = ['Game Design & Development', 'Procedural Generation', 'AI-driven Systems', 'Problem-Solving', 'Interactive Systems'];
+  const visualTools = ['Blender', 'Photoshop', 'Krita', 'Figma', 'Aseprite', 'MagicaVoxel'];
+  const devTools = ['Unity', 'VR Development', 'AR Development', 'Visual Studio', 'Visual Studio Code'];
+  const specializations = ['Game Design & Development', 'Interactive Systems', 'Procedural Generation', 'AI-driven Systems', 'Problem-Solving', ];
   const softSkills = ['Works well under pressure', 'Team & solo environments', 'Communication & teaching', 'Debugging & problem-solving'];
 
   return (
