@@ -710,6 +710,26 @@ nav a:hover {
   color: #92400e;
 }
 
+.skill-tag--course {
+  background: rgba(99, 179, 237, 0.15);
+  color: #3182ce;
+  border-color: rgba(99, 179, 237, 0.35);
+}
+
+.skill-tag--course:hover {
+  background: rgba(99, 179, 237, 0.28);
+}
+
+.skill-tag--course-alt {
+  background: rgba(154, 117, 235, 0.13);
+  color: #805ad5;
+  border-color: rgba(154, 117, 235, 0.32);
+}
+
+.skill-tag--course-alt:hover {
+  background: rgba(154, 117, 235, 0.25);
+}
+
 .skill-tag--soft {
   background-color: rgba(29, 78, 216, 0.10);
   border-color: rgba(29, 78, 216, 0.30);

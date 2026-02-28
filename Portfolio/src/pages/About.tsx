@@ -33,6 +33,29 @@ const About: React.FC = () => {
   const specializations = ['Game Design & Development', 'Interactive Systems', 'Procedural Generation', 'AI-driven Systems', 'Multimedia Design', 'Digital Prototyping'];
   const softSkills = ['Works well under pressure', 'Team & Solo Environments', 'Communication & Teaching', 'Debugging & Problem-solving'];
 
+  const coursesInteraction = [
+    'Interaction Design',
+    'Design of Immersive Experiences',
+    'Programming of Immersive Technologies',
+    'Advanced Human-Computer Interaction',
+    'UX: Qualitative User Evaluation',
+    'UX: Quantitative User Evaluation',
+    'Physical Prototypes and Interactions',
+    'Narratives in Interactive Systems',
+  ];
+  const coursesTechnical = [
+    'Programming of Interactive 3D Worlds',
+    'Real-Time Computer Graphics',
+    'Game Design and Development',
+    'Interactive Audio Systems',
+    'Machine Learning for Media Experiences',
+    'Audio Signal Processing',
+    'Image Processing',
+    'Mobile Application Development',
+    'Mathematics for Multimedia Applications',
+    'Web Programming',
+  ];
+
   return (
     <div className="about-page">
 
@@ -159,6 +182,25 @@ const About: React.FC = () => {
         <h2>Soft Skills</h2>
         <div className="tag-list">
           {softSkills.map(s => <span key={s} className="skill-tag skill-tag--soft">{s}</span>)}
+        </div>
+      </section>
+
+      {/* Courses */}
+      <section id="UniversityCourses" className="about-section">
+        <h2>University Courses</h2>
+        <div className="skills-grid">
+          <div className="skills-group skills-group--full">
+            <h3>Interaction &amp; Experience Design</h3>
+            <div className="tag-list">
+              {coursesInteraction.map(c => <span key={c} className="skill-tag skill-tag--course">{c}</span>)}
+            </div>
+          </div>
+          <div className="skills-group skills-group--full">
+            <h3>Technical &amp; Media</h3>
+            <div className="tag-list">
+              {coursesTechnical.map(c => <span key={c} className="skill-tag skill-tag--course-alt">{c}</span>)}
+            </div>
+          </div>
         </div>
       </section>
 

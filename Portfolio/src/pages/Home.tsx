@@ -6,7 +6,7 @@ import LinkButton from '../components/LinkButton';
 
 const Home: React.FC = () => {
   // Show featured games on home page (first 2 games and the video game)
-  const featuredGameIds = ['Train-em', 'Bachelor', 'My-Mafia-Boyfriends', 'P7', 'Linked-Together', 'Fitness-Phasmo'];
+  const featuredGameIds = ['Bachelor', 'Train-em', 'P5', 'P7', 'My-Mafia-Boyfriends', 'Fitness-Phasmo'];
   const featuredGames = getProjectsByIds(featuredGameIds);
 
   return (

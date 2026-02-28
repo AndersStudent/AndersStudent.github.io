@@ -75,7 +75,7 @@ function App() {
               <ul className="dropdown-menu">
                 <li><Link to="/about#Background">Background</Link></li>
                 <li><Link to="/about#Experience">Experience</Link></li>
-                <li><Link to="/about#Skills">Skills</Link></li>
+                <li><Link to="/about#UniversityCourses">Courses</Link></li>
                 <li><Link to="/about#Hobbies">Hobbies</Link></li>
                 <li><Link to="/about#Goal">Goal</Link></li>
                 <li><Link to="/about#SendMeAMessage">Send Mail</Link></li>
