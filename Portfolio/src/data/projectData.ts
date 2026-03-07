@@ -60,7 +60,7 @@ export const projectsData: Project[] = [
     id: 'Train-em',
     type: 'Solo Development',
     title: 'Train\'Em',
-    description: '<strong>Creature-collection adventure</strong> with real-time combat, open-world exploration, and multiplayer.',
+    description: '<strong>Creature-collection RPG</strong> set in the <strong>open world</strong>. Players explore diverse environments, capture and train companions, and build powerful teams for <strong>strategic real-time battles</strong>. The game features tournaments, competitive challenges and <strong>multiplayer</strong>.',
     myRole: '<strong>Solo Developer</strong>, Full-time over 1.5 years; Designed, coded, and built the entire game. | <strong>Unity (C#)</strong> | Published: Oct 2021',
     video: 'https://youtu.be/wgnoPE7cfVI',
     link: 'https://store.steampowered.com/app/1686390/Trainem/',
@@ -152,7 +152,7 @@ export const projectsData: Project[] = [
     id: 'Little-Adventures',
     type: 'Solo Development',
     title: 'Little Adventures',
-    description: '<strong>Procedural dungeon crawler</strong> with strong roguelike elements and multiplayer.',
+    description: 'strong>roguelike dungeon crawler</strong> where players explore <strong>procedurally generated levels</strong>, fight monsters, and collect upgrades to survive increasingly challenging encounters. Featuring boss battles, character builds, and <strong>local co-op</strong>.',
     myRole: '<strong>Solo Developer</strong>, Spare-time over 1 year; Designed, coded, and built the entire game. | <strong>Unity (C#)</strong> | Published: Sep 2020',
     video: 'https://youtu.be/f9Kzc2vk0PE',
     link: 'https://store.steampowered.com/app/1253760/Little_Adventures/',
@@ -163,7 +163,7 @@ export const projectsData: Project[] = [
     id: 'My-Mafia-Boyfriends',
     type: 'Game Jam',
     title: 'My Mafia Boyfriend(s)',
-    description: '<strong>Branching romance-crime visual novel</strong> where you infiltrate a mafia as an undercover FBI agent and navigate love, choices, and consequences.',
+    description: '<strong>Branching romance-crime visual novel</strong> where players take on the role of undercover FBI agent infiltrating a mafia family. Through dialogue choices, players shape the story and relationships, leading to multiple possible endings.',
     myRole: '<strong>The Programmer</strong>, <strong>Game Integrator</strong> & <strong>Co-Director</strong> (Team of 2) | <strong>Unity (C#)</strong> | Create Jam 2025 Fall (45h)',
     images: [
       'GameJams/Pictures/My Mafia Boyfriend(s)/my-mafia-boyfriends-1.png',
@@ -182,7 +182,7 @@ export const projectsData: Project[] = [
     id: 'Linked-Together',
     type: 'Game Jam',
     title: 'Linked Together',
-    description: '<strong>Cooperative rage-platformer</strong> with physics-based climbing challenges in a linked character setup.',
+    description: '<strong>Chaotic couch co-op rage platformer</strong> where players climb challenging levels while physically linked together. It mixes <strong>physics-based movement</strong> and teamwork to create hilarious (and frustrating) cooperative moments.',
     myRole: '<strong>Lead Programmer</strong>, <strong>Game Integrator</strong> & <strong>Artist</strong> (Team of 6) | <strong>Unity (C#)</strong> | Weekend Jam 2025',
     images: [
       'GameJams/Pictures/Linked Together/linked-together-2.png',
@@ -199,7 +199,7 @@ export const projectsData: Project[] = [
     id: 'Fitness-Phasmo',
     type: 'Game Jam',
     title: 'Fitness Phasmo',
-    description: '<strong>Horror Phasmophobia</strong> where players perform task to survive paranormal encounters in a fitness center.',
+    description: '<strong>First-person horror investigation</strong> game set in a haunted gym, inspired by <strong>Phasmophobia</strong>. Players explore the environment, collect paranormal evidence, and identify the type of ghost while trying to survive the supernatural encounters.',
     myRole: '<strong>Lead Programmer</strong>, <strong>Game Integrator</strong>, <strong>Co-Director</strong> & <strong>Level Designer</strong> (Team of 7) | <strong>Unity (C#)</strong> | Create Jam 2024 Fall (45h)',
     images: [
       'GameJams/Pictures/Fitness Phasmo/fitness-phasmo-3.png',
@@ -216,7 +216,7 @@ export const projectsData: Project[] = [
     id: 'Zombie-Surprise-Shooter-Reloaded',
     type: 'Game Jam',
     title: 'Zombie Surprise Shooter',
-    description: '<strong>Fast-paced zombie shooter</strong> where players blast through hordes of unpredictable zombie combat with random weapon outcomes and chaotic twist mechanics.',
+    description: '<strong>Fast-paced zombie shooter</strong> where players fight off undead enemies using a weapon with unpredictable results. The game adds a humorous twist by making each shot potentially helpful or harmful, creating a chaotic and surprising gameplay experience.',
     myRole: '<strong>Lead Programmer</strong>, <strong>Game Integrator</strong>, <strong>Co-Director</strong> & <strong>Level Designer</strong> (Team of 9) | <strong>Unity (C#)</strong> | Create Jam 2025 Spring (45h)',
     images: [
       'GameJams/Pictures/Zombie Surprise Shooter Reloaded/zombie-surprise-shooter-reloaded-4.png',
@@ -232,7 +232,7 @@ export const projectsData: Project[] = [
     id: 'Kudu-Hunt',
     type: 'Game Jam',
     title: 'Kudu Hunt',
-    description: '<strong>2D hunting adventure</strong> about Namibian stories, developed in collaboration with a local community in Namibia.',
+    description: '<strong>2D hunting adventure</strong> Players explore the environment while experiencing a story inspired by <strong>Namibian folklore and wildlife</strong>. The project focuses on atmospheric design and was developed in collaboration with a community in Namibia.',
     myRole: '<strong>Lead Programmer</strong>, <strong>Game Integrator</strong>, <strong>Co-Director</strong> & <strong>Artist</strong> (Team of 6) | <strong>Unity (C#)</strong> | University GameJam 2022',
     images: [
       'GameJams/Pictures/Kudu Hunt/kudu-hunt-1.png',
@@ -248,7 +248,7 @@ export const projectsData: Project[] = [
     id: 'Gulles-Incompetent-Pirates',
     type: 'Game Jam',
     title: 'Gulle\'s Incompetent Pirates',
-    description: '<strong>Casual 3D puzzle-adventure</strong> about a seagull doing physics-based challenges.',
+    description: '<strong>3D puzzle adventure</strong> where players control a seagull helping a group of clumsy pirates reach their destination. The game focuses on casual exploration and puzzle interactions to guide the pirates safely to the island.',
     myRole: '<strong>Lead Programmer</strong>, <strong>Game Integrator</strong>, <strong>Co-Director</strong> & <strong>Level Designer</strong> (Team of 7) | <strong>Unity (C#)</strong> | Create Jam 2023 Spring (45h)',
     images: [
       'GameJams/Pictures/Gulle\'s Incompetent Pirates/gulles-incompetent-pirates-4.png',
@@ -264,7 +264,7 @@ export const projectsData: Project[] = [
     id: 'not-2B-Diner-Dash',
     type: 'Game Jam',
     title: 'Not-2B Diner Dash',
-    description: '<strong>Steampunk-inspired action restaurant simulator</strong> where players serve customers and manage a chaotic diner in a cozy-themed.',
+    description: '<strong>Fast-paced restaurant management</strong> game where players must quickly serve customers and handle multiple tasks under time pressure. The game focuses on challenging players to efficiently take orders, and keep customers satisfied.',
     myRole: '<strong>Lead Programmer</strong>, <strong>Game Integrator</strong>, <strong>Co-Director</strong> & <strong>Level Designer</strong> (Team of 5) | <strong>Unity (C#)</strong> | Create Jam 2022 Fall (45h)',
     images: [
       'GameJams/Pictures/not-2B Diner Dash/not-2b-diner-dash-3.png',
